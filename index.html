@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+    <head>
+     <meta charset="utf-8">
+         <title>HTML Academy: Глейси</title>
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
 
     <!-- Header -->
     <header class="main-header">
         <!-- begin container -->
         <div class="container">
+
+            <!-- Menu -->
             <section class="main-header-menu">
 
                 <!-- Logo -->
                 <a class="main-header-logo" href="">
-                    <img src="img/logo.png" width="" height="" alt="Глейси">
+                    <img src="http://placehold.it/150x100" width="" height="" alt="Глейси">
                 </a>
 
                 <!-- Main navigation -->
@@ -84,10 +87,74 @@
                 </div>
                 <!-- end user-block -->
 
+                <!-- Phones -->
+                <div class="main-header-phones">
+                    <p class="main-header-phones-time">С 10 до 20, ежедневно</p>
+                    <p class="main-header-phones-phone">8 812 450-25-25</p>
+                </div>
+
             </section>
+
+            <!-- Slider -->
+            <section class="slider">
+
+                <input id="slideFirst" type="radio" name="slide" value="slide-1" checked="checked">
+                <input id="slideSecond" type="radio" name="slide" value="slide-2">
+                <input id="slideThree" type="radio" name="slide" value="slide-3">
+
+                <div class="slider-controls">
+                    <label for="slideFirst"></label>
+                    <label for="slideSecond"></label>
+                    <label for="slideThree"></label>
+                </div>
+
+                <!-- first slide -->
+                <div class="slide  slide-first">
+                    <h1 class="slide title">Крем-брюле и пломбир с малиновым джемом</h1>
+                    <a class="btn" href="">Давайте оба!</a>
+                </div>
+
+                <!-- second slide -->
+                <div class="slide  slide-second">
+                    <h1 class="slide title">Шоколадный пломбир и лимонный сорбет</h1>
+                    <a class="btn" href="">Давайте оба!</a>
+                </div>
+
+                <!-- three slide -->
+                <div class="slide  slide-three">
+                    <h1 class="slide title">Пломбир с помадкой и клубничный щербет</h1>
+                    <a class="btn" href="">Давайте оба!</a>
+                </div>
+
+            </section>
+
         </div>
         <!-- end container -->
     </header>
+
+    <main class="container">
+
+        <!-- begin banners -->
+        <div class="banners">
+
+            <!-- first-banner -->
+            <div class="banner  first-banner">
+                <div class="banner-title">Малинка даром!</div>
+                <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <a class="btn" href="">Хочу варенье!</a>
+            </div>
+
+            <!-- second-banner -->
+            <div class="banner  second-banner">
+                <div class="banner-title">Малинка даром!</div>
+                <p class="banner-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <a class="btn" href="">Хочу варенье!</a>
+            </div>
+
+        </div>
+        <!-- end banners -->
+
+    </main>
 
   </body>
 </html>
