@@ -59,24 +59,27 @@
                     <!-- Search -->
                     <div class="user-block-search">
                         <div class="user-block-search-field">
-                            <input type="search" placeholder="Что ищем?">
+                            <input type="search" name="search" placeholder="Что ищем?">
                         </div>
                     </div>
 
                     <!-- Entrance -->
                     <div class="user-block-entrance">
                         <a class="login" href="#">Вход</a>
-                        <div class="user-block-entrance-form">
 
-                            <input type="email" placeholder="Электронная почта">
-                            <input type="password" placeholder="Пароль">
+                        <!-- Entrance form -->
+                        <form class="user-block-entrance-form" method="post">
 
-                            <button class="btn">Войти</button>
+                              <input type="email" name="email" placeholder="Электронная почта">
+                              <input type="password" name="password" placeholder="Пароль">
 
-                            <a href="">Забыли пароль?</a>
-                            <a href="">Новая регистрация</a>
+                              <button class="btn" type="submit">Войти</button>
 
-                        </div>
+                              <a href="">Забыли пароль?</a>
+                              <a href="">Новая регистрация</a>
+
+                          </form>
+
                     </div>
 
                     <!-- Basket -->
@@ -132,6 +135,7 @@
         <!-- end container -->
     </header>
 
+    <!-- Main content -->
     <main class="container">
 
         <!-- begin banners -->
@@ -196,7 +200,142 @@
         </div>
         <!-- end hits -->
 
+        <!-- begin features -->
+        <div class="features">
+            <div class="features-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</div>
+
+            <!-- begin features-items-left -->
+            <div class="features-items-left">
+
+                <!-- features-item -->
+                <div class="features-item  features-item-production">
+                    <p class="features-item-description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                </div>
+
+                <!-- features-item -->
+                <div class="features-item  features-item-ingredients">
+                    <p class="features-item-description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+                                                         Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+                </div>
+
+            </div>
+            <!-- end features-items-left -->
+
+            <!-- begin features-items-right -->
+            <div class="features-items-right">
+
+                <!-- features-item -->
+                <div class="features-item  features-item-purchase">
+                    <p class="features-item-description">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                </div>
+
+                <!-- features-item -->
+                <div class="features-item  features-item-delivery">
+                    <p class="features-item-description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус. </p>
+                </div>
+
+            </div>
+            <!-- end features-items-right -->
+
+        </div>
+        <!-- end features -->
+
+        <!-- News-blog -->
+        <div class="news-blog">
+            <p>Новое в нашем блоге</p>
+            <a href="">10  способов сервировки фруктовых щербетов к столу</a>
+        </div>
+
+        <!-- Mailing -->
+        <div class="mailing">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+
+            <form class="mailing-form" action="" method="post">
+                <input type="email" name="email" placeholder="Электронная почта">
+                <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
+
     </main>
+
+    <!-- begin map -->
+    <div class="map">
+        <div class="map-image" id="map-canvas"></div>
+
+        <!-- begin container -->
+        <div class="container">
+
+            <!-- Contacts -->
+            <div class="map-contacts">
+                <p>Адрес главного офиса и офлайн магазина: <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+                <p>Для заказов по телефону: <b>8 812 450-25-25</b> (с 10 до 20 ежедневно)</p>
+                <a class="btn" href="form.html">Форма обратной связи</a>
+            </div>
+
+            <!-- Feedback-form -->
+            <div class="feedback-form">
+                <div class="feedback-form-close"></div>
+                <p>Мы обязательно вам ответим!</p>
+
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Как вас зовут?">
+                    <input type="email" name="email" placeholder="Ваша почта для ответа">
+                    <textarea name="text" placeholder="Напишите что-нибудь..."></textarea>
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+
+            </div>
+
+        </div>
+        <!-- end container -->
+
+    </div>
+    <!-- end map -->
+
+    <!-- Footer -->
+    <footer class="main-footer">
+
+        <!-- begin container -->
+        <div class="container">
+
+            <!-- Footer-social -->
+            <section class="footer-social">
+                <a class="social-btn social-btn-tv" href="#">Твиттер</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            </section>
+
+            <!-- Footer menu -->
+            <section class="footer-menu">
+                <ul>
+                    <li>
+                        <a href="">Для поставщиков</a>
+                    </li>
+                    <li>
+                        <a href="">О производстве</a>
+                    </li>
+                    <li>
+                        <a href="">Наши документы</a>
+                    </li>
+                    <li>
+                        <a href="">Экологические стандарты</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Footer-copyright -->
+            <section class="footer-copyright">
+                <div class="footer-copyright-img">
+                    <img src="" width="" height="" alt="">
+                    <p>Сделано в <a href="">HTML Academy</a> © 2016</p>
+                </div>
+            </section>
+
+        </div>
+        <!-- end container -->
+
+    </footer>
 
   </body>
 </html>
