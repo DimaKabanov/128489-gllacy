@@ -417,3 +417,30 @@ textarea {
     -webkit-appearance: button; /* 1 */
     font: inherit; /* 2 */
 }
+
+body {
+  min-width: 1200px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
+
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
