@@ -435,19 +435,6 @@ a {
   color: #ffffff;
 }
 
-/*a:not(.main-navigation):after {*/
-  /*content: "";*/
-
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*left: 0;*/
-
-  /*width: 100%;*/
-  /*height: 1px;*/
-
-  /*background: white;*/
-/*}*/
-
 img {
   max-width: 100%;
   vertical-align: top;
@@ -525,19 +512,6 @@ img {
   padding: 8px 13px;
 }
 
-/*.main-navigation a:after {*/
-  /*content: "";*/
-
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*left: 13px;*/
-  /*right: 13px;*/
-
-  /*height: 1px;*/
-
-  /*background: white;*/
-/*}*/
-
 .main-navigation a:hover {
   font-weight: 700;
   text-decoration: none;
@@ -547,6 +521,7 @@ img {
   border-radius: 25px;
 }
 
+/* begin sub-menu */
 .sub-menu {
   position: absolute;
   top: 36px;
@@ -569,6 +544,7 @@ img {
   color: #323232;
 }
 
+/* линия после первого пункта */
 .sub-menu li:first-child::after {
   content: "";
 
@@ -614,8 +590,10 @@ img {
 .sub-menu li:not(:first-child):active {
   background-color: #f6b5a5;
 }
+/* end sub-menu */
 
 
+/* begin user-block */
 .user-block {
   float: right;
   width: 265px;
@@ -676,9 +654,8 @@ img {
   padding: 11px 13px 11px 13px;
 
   border: 2px solid #8fbdec;
-  /*outline: none;*/
 }
-
+/* user-block-entrance */
 .user-block-entrance {
   position: relative;
 
@@ -697,8 +674,45 @@ img {
   position: absolute;
 
   display: block;
+  padding: 20px;
+  width: 237px;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
+.user-block-entrance-form input {
+  width: 100%;
+  padding: 10px 14px 10px 14px;
+  margin-bottom: 19px;
+  box-sizing: border-box;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.user-block-entrance-form-link {
+  float: right;
+  width: 120px;
+}
+
+.user-block-entrance-form-link a {
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #323232;
+  text-decoration: underline;
+}
+
+/*.user-block-entrance-form a {*/
+  /*display: block;*/
+  /*float: right;*/
+
+  /*color: #323232;*/
+  /*text-decoration: underline;*/
+/*}*/
+
+/* user-block-basket */
 .user-block-basket {
   float: right;
   margin-top: 3px;
@@ -709,4 +723,23 @@ img {
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 25px;
+}
+/* end user-block */
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #fefefe;
+  background-image: linear-gradient(#f26843, #e74b36);
 }
