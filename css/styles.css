@@ -852,6 +852,8 @@ button {
 .banners {
   position: relative;
   z-index: 2;
+
+  margin-bottom: 40px;
 }
 
 .banner {
@@ -895,6 +897,95 @@ button {
 
   background-image: url("../img/chocolate-bg.png");
   background-repeat: no-repeat;
+}
+
+/* hits */
+.hits-list {
+  margin-bottom: 40px;
+}
+
+.hits-item {
+  position: relative;
+
+  float: left;
+  width: 267px;
+  margin-right: 26px;
+
+  text-align: center;
+}
+
+.hits-item:last-child {
+  margin-right: 0;
+}
+
+.hits-item-img {
+  width: 267px;
+  height: 267px;
+  margin-bottom: 17px;
+  
+  border-radius: 50%;
+}
+
+.hits-item-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/hit.png");
+}
+.hits-item-img1 {
+  background-image: url("../img/ice-img1.jpg");
+}
+
+.hits-item-img2 {
+  background-image: url("../img/ice-img2.jpg");
+}
+
+.hits-item-img3 {
+  background-image: url("../img/ice-img3.jpg");
+}
+
+.hits-item-img4 {
+  background-image: url("../img/ice-img4.jpg");
+}
+
+.hits-item-prise {
+  position: absolute;
+  bottom: 45px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+/* features */
+.features {
+  padding: 30px 20px 15px 20px;
+  /*min-height: 306px;*/
+
+  border-radius: 10px;
+
+  color: #323232;
+  background-image: url("../img/wafer-bg.jpg");
+}
+
+.features-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features-items-left,
+.features-items-right {
+  float: left;
+  width: 540px;
+}
+
+.features-item {
+  padding-left: 58px;
 }
 
 .btn {
