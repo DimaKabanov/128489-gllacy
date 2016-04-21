@@ -445,6 +445,8 @@ button {
 }
 
 .container {
+  position: relative;
+
   width: 1200px;
   margin: 0 auto;
   padding: 0 27px;
@@ -483,6 +485,10 @@ button {
 
 
 /* begin header */
+/*.main-header-menu {*/
+  /*position: relative;*/
+/*}*/
+
 .main-header-logo {
   float: left;
   padding-top: 10px;
@@ -491,9 +497,23 @@ button {
 
 /* main-navigation */
 .main-navigation {
+  position: relative;
+
   float: left;
   padding-top: 24px;
 }
+
+/*.main-navigation::after {*/
+  /*content: "";*/
+
+  /*position: absolute;*/
+
+  /*display: block;*/
+  /*width: 100%;*/
+  /*height: 10px;*/
+
+  /*background-color: red;*/
+/*}*/
 
 .main-navigation ul {
   margin: 0;
@@ -528,7 +548,7 @@ button {
 /* begin sub-menu */
 .sub-menu {
   position: absolute;
-  top: 36px;
+  top: 40px;
   left: -20px;
   z-index: 2;
 
@@ -538,6 +558,17 @@ button {
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.4);
+}
+
+.sub-menu::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+
+  display: block;
+  width: 100%;
+  height: 10px;
 }
 
 .sub-menu li:first-child {
@@ -643,6 +674,18 @@ button {
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.4);
 }
 
+.user-block-search-field::before {
+  content: "";
+
+  position: absolute;
+  top: -32px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 32px;
+}
+
 .user-block-search:hover .user-block-search-field {
   display: block;
 }
@@ -695,6 +738,17 @@ button {
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.4);
+}
+
+.user-block-entrance-form::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+
+  display: block;
+  width: 100%;
+  height: 10px;
 }
 
 .user-block-entrance:hover .user-block-entrance-form {
@@ -886,8 +940,6 @@ button {
 }
 
 .first-banner {
-  /*float: left;*/
-
   background-image: url("../img/raspberries-bg.png");
   background-repeat: no-repeat;
 }
@@ -922,7 +974,7 @@ button {
   width: 267px;
   height: 267px;
   margin-bottom: 17px;
-  
+
   border-radius: 50%;
 }
 
@@ -964,7 +1016,7 @@ button {
 /* features */
 .features {
   padding: 30px 20px 15px 20px;
-  /*min-height: 306px;*/
+  margin-bottom: 40px;
 
   border-radius: 10px;
 
@@ -973,6 +1025,8 @@ button {
 }
 
 .features-title {
+  margin-bottom: 10px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -984,8 +1038,112 @@ button {
   width: 540px;
 }
 
+.features-items-left {
+  margin-right: 26px;
+}
+
 .features-item {
+  position: relative;
+
   padding-left: 58px;
+}
+
+.features-item svg {
+  position: absolute;
+
+  left: 0;
+  top: -10px;
+}
+
+/* news-blog */
+.news-blog {
+  float: left;
+  width: 560px;
+  min-height: 220px;
+  padding: 10px 20px;
+  margin-right: 26px;
+
+  font-weight: 500;
+
+  background-image: url("../img/strawberry-bg.png");
+  background-repeat: no-repeat;
+  color: #323232;
+
+  box-sizing: border-box;
+}
+
+.news-blog a {
+  display: block;
+  width: 300px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+
+  color: #323232;
+}
+
+/* mailing */
+.mailing {
+  float: left;
+  width: 560px;
+  min-height: 220px;
+  padding: 10px 25px;
+
+  background-image: url("../img/mail-bg.png");
+  background-repeat: no-repeat;
+  color: #5a5a5a;
+
+  box-sizing: border-box;
+}
+
+.mailing p {
+  margin-bottom: 40px;
+}
+
+.map {
+  position: relative;
+
+  width: 100%;
+  height: 429px;
+  margin-top: 85px;
+}
+
+.map .map-image {
+  position: absolute;
+
+
+  width: 100%;
+  height: 100%;
+  background: url("../img/map.jpg") no-repeat center;
+}
+
+.map-contacts {
+  position: absolute;
+  top: 63px;
+  right: 27px;
+
+  padding: 14px 25px 28px 25px;
+  width: 252px;
+
+  color: #323232;
+  background-color: #fdfefe;
+
+  border-radius: 13px;
+}
+
+.feedback-form {
+  display: none;
+}
+
+.mailing-form input {
+  width: 366px;
+  padding: 12px 14px 12px 14px;
+  margin-right: 10px;
+  box-sizing: border-box;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .btn {
@@ -1022,4 +1180,8 @@ button {
 
   font-size: 32px;
   line-height: 44px;
+}
+
+.mailing-form .btn {
+  padding: 10px 19px;
 }
