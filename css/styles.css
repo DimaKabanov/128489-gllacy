@@ -1878,6 +1878,10 @@ legend {
   border-radius: 10px;
 }
 
+.feedback-form-show {
+  display: block;
+}
+
 .feedback-form-close {
   position: absolute;
   right: 15px;

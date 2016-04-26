@@ -1,3 +1,21 @@
+var contacts = document.querySelector(".map-contacts");
+var btn = contacts.querySelector(".btn");
+var feedbackForm = document.querySelector(".feedback-form");
+var closeForm = document.querySelector(".feedback-form-close");
+var name = feedbackForm.querySelector("[name=name]");
+
+btn.addEventListener("click", function(event){
+  event.preventDefault();
+  feedbackForm.classList.add("feedback-form-show");
+  name.focus();
+});
+
+closeForm.addEventListener("click", function(event){
+  event.preventDefault();
+  feedbackForm.classList.remove("feedback-form-show");
+});
+
+//map
 function initialize() {
   var mapOptions = {
     scrollwheel: false,
