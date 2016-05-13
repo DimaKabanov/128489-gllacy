@@ -461,7 +461,7 @@ button {
 
   width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 22px 0 27px;
   box-sizing: border-box;
 }
 
@@ -512,7 +512,7 @@ button {
 .main-header-logo {
   float: left;
   padding-top: 10px;
-  margin-right: 19px;
+  margin-right: 17px;
 
   border-bottom: none;
 }
@@ -532,7 +532,7 @@ button {
   position: relative;
 
   float: left;
-  padding-top: 24px;
+  padding-top: 23px;
 }
 
 .main-navigation ul {
@@ -729,7 +729,7 @@ button {
 
 .user-block-search svg {
   position: absolute;
-  left: 7px;
+  left: 10px;
   top: 7px;
 }
 
@@ -805,7 +805,7 @@ button {
 
 .user-block-entrance svg {
   position: absolute;
-  left: 16px;
+  left: 17px;
   top: 7px;
 }
 
@@ -1058,7 +1058,7 @@ button {
 /*-------- breadcrumbs --------*/
 
 .breadcrumbs {
-  margin: 28px 0 0;
+  margin: 23px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -1105,7 +1105,7 @@ legend {
 .sorting-top {
   position: relative;
 
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 /*-------- sort --------*/
@@ -1198,10 +1198,10 @@ legend {
   position: relative;
 
   width: 182px;
-  height: 22px;
+  height: 25px;
   padding: 0 15px;
   padding-top: 15px;
-  margin-top: 24px;
+  margin-top: 22px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
@@ -1235,11 +1235,11 @@ legend {
 }
 
 .range-btn-min {
-  left: 29px;
+  left: 37px;
  }
 
 .range-btn-max {
-  left: 127px;
+  left: 135px;
 }
 
 .sorting-top .filter-box {
@@ -1371,7 +1371,7 @@ legend {
 
 .sorting .btn {
   padding: 8px 29px;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-left: 14px;
 
   font-size: 16px;
@@ -1403,7 +1403,7 @@ legend {
 /*-------- catalog-list --------*/
 
 .catalog-list {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   font-size: 0;
 }
@@ -1519,7 +1519,7 @@ legend {
 }
 
 .paginator a {
-  padding: 7px 12px;
+  padding: 1px 7px;
 
   text-decoration: none;
 
@@ -1638,7 +1638,7 @@ legend {
 
 .slide-description {
   position: absolute;
-  top: 270px;
+  bottom: 355px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -1680,6 +1680,7 @@ legend {
   margin-right: 26px;
 
   box-sizing: border-box;
+  border-radius: 15px;
 }
 
 .banner-title {
@@ -1702,13 +1703,13 @@ legend {
 }
 
 .first-banner {
-  background: url("../img/raspberries-bg.png") no-repeat;
+  background: url("../img/raspberries-bg.jpg") repeat;
 }
 
 .second-banner {
   margin-right: 0;
 
-  background: url("../img/chocolate-bg.png") no-repeat;
+  background: url("../img/chocolate-bg.jpg") repeat;
 }
 
 /*-------- hits --------*/
@@ -1772,12 +1773,14 @@ legend {
 
 .hits-item-prise,
 .catalog-item-prise {
-  position: absolute;
-  bottom: 27px;
+  position: relative;
+  z-index: 10;
+  margin: -78px 0 30px;
 
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+  text-align: left;
 }
 
 .hits-item-prise img,
@@ -1792,13 +1795,13 @@ legend {
 /*-------- features --------*/
 
 .features {
-  padding: 20px 20px 20px 20px;
+  padding: 25px 20px 15px 27px;
   margin-bottom: 40px;
 
   border-radius: 10px;
 
   color: #323232;
-  background-image: url("../img/wafer-bg.jpg");
+  background: #efe6d2 url("../img/wafer-bg.jpg");
 }
 
 .features-title {
@@ -1816,7 +1819,7 @@ legend {
 }
 
 .features-items-left {
-  margin-right: 26px;
+  margin-right: 19px;
 }
 
 .features-item {
@@ -1838,15 +1841,21 @@ legend {
   float: left;
   width: 560px;
   min-height: 220px;
-  padding: 10px 20px;
+  padding: 10px 24px;
   margin-right: 26px;
 
   font-weight: 500;
 
-  background: url("../img/strawberry-bg.png") no-repeat;
+  background: url("../img/strawberry-bg.jpg") no-repeat 18% 40%;
   color: #323232;
 
   box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.news-blog p {
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 .news-blog a {
@@ -1875,7 +1884,7 @@ legend {
   min-height: 220px;
   padding: 10px 25px;
 
-  background: url("../img/mail-bg.png") no-repeat;
+  background: url("../img/mail-bg.png") repeat;
   color: #5a5a5a;
 
   box-sizing: border-box;
@@ -1933,7 +1942,7 @@ legend {
   top: 63px;
   right: 27px;
 
-  padding: 14px 25px 28px 25px;
+  padding: 14px 19px 28px 25px;
   width: 252px;
 
   color: #323232;
@@ -1943,7 +1952,8 @@ legend {
 }
 
 .map-contacts p {
-  margin-bottom: 25px;
+  margin-top: 8px;
+  margin-bottom: 22px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1952,6 +1962,10 @@ legend {
 .map-contacts b {
   font-size: 18px;
   line-height: 24px;
+}
+
+.map-contacts .btn {
+  margin-top: 6px;
 }
 
 /*-------- feedback-form --------*/
@@ -2079,6 +2093,7 @@ legend {
 
   margin-top: 10px;
   margin-right: 215px;
+  margin-left: 10px;
 }
 
 .social-btn {
